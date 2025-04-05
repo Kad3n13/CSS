@@ -2,40 +2,101 @@ body {
   background-image: url(https://pplx-res.cloudinary.com/image/upload/v1743893510/user_uploads/ztwYmQBrtGMFJtG/stacked-waves-haikei-1.jpg);
   font-family: sans-serif;
   padding: 20px;
-  color: white;
+  color: #fff; /* Default text color to white for contrast */
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #ddd; /* Lighter grey for headings */
+}
+
+h2 {
+  font-size: 30px;
+  color: #ddd;
+}
+
+.established {
+  font-style: italic;
 }
 
 h1, h2, p {
   text-align: center;
-  color: grey;
 }
 
 .menu {
   width: 80%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
   max-width: 500px;
-  border: 1px solid #ccc;
+  border: 1px solid #666; /* Darker grey border */
+}
+
+img {
+  display: block;
+  margin-top: -25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 hr {
   height: 2px;
-  background-color: #808080;
-  border-color: #808080;
+  background-color: #666; /* Dark grey */
+  border-color: #666;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+h1, h2 {
+  font-family: Impact, serif;
+}
+
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.flavor, .dessert {
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%;
+}
+
+/* FOOTER */
+
+footer {
+  font-size: 14px;
+}
+
+address {
+  font-style: normal;
+}
+
+.address {
+  margin-bottom: 5px;
 }
 
 a {
-  color: #ddd;
+  color: #bbb; /* Light grey for links */
 }
 
 a:visited {
-  color: #ddd;
+  color: #bbb;
 }
 
 a:hover {
-  color: #fff;
+  color: #fff; /* White on hover */
 }
 
 a:active {
