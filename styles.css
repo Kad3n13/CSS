@@ -1,28 +1,21 @@
-/* Reset and base styles */
 body {
-  background: linear-gradient(to bottom right, #2e2e2e, #1a1a1a);
-  color: #f0f0f0;
-  font-family: 'Segoe UI', sans-serif;
+  background-image: url(blob:https://app.haikei.app/7ccdb7ca-8269-470b-b6a0-02b58be8f477);
+  font-family: sans-serif;
   padding: 20px;
-  margin: 0;
 }
 
-/* Header styles */
 h1 {
   font-size: 40px;
   margin-top: 0;
-  margin-bottom: 10px;
-  color: #d1b3ff;
+  margin-bottom: 15px;
 }
 
 h2 {
   font-size: 30px;
-  color: #b19cd9;
 }
 
 .established {
   font-style: italic;
-  color: #999;
 }
 
 h1, h2, p {
@@ -30,36 +23,39 @@ h1, h2, p {
 }
 
 .menu {
-  width: 90%;
-  max-width: 550px;
-  background-color: #333;
-  margin: 0 auto;
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(128, 0, 128, 0.4);
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
 }
 
 img {
   display: block;
-  margin: -20px auto 10px;
-  width: 60px;
-  height: auto;
+  margin-top: -25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 hr {
   height: 2px;
-  background-color: #6a0dad;
-  border: none;
+  background-color: brown;
+  border-color: brown;
 }
 
 .bottom-line {
   margin-top: 25px;
 }
 
-/* Item styles */
+h1, h2 {
+  font-family: Impact, serif;
+}
+
 .item p {
   display: inline-block;
-  margin: 5px 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
   font-size: 18px;
 }
 
@@ -73,35 +69,33 @@ hr {
   width: 25%;
 }
 
-/* Footer styles */
+/* FOOTER */
+
 footer {
   font-size: 14px;
-  margin-top: 20px;
 }
 
 address {
   font-style: normal;
-  text-align: center;
 }
 
 .address {
   margin-bottom: 5px;
-  color: #ccc;
 }
 
 a {
-  color: #cba6f7;
-  text-decoration: none;
+  color: black;
 }
 
 a:visited {
-  color: grey;
+  color: black;
 }
 
 a:hover {
-  color: #e0b3ff;
+  color: brown;
 }
 
 a:active {
-  color: #a64ca6;
+  color: brown;
 }
+
