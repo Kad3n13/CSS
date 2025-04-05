@@ -1,24 +1,29 @@
 body {
   background-image: url(https://pplx-res.cloudinary.com/image/upload/v1743893510/user_uploads/ztwYmQBrtGMFJtG/stacked-waves-haikei-1.jpg);
-  font-family: sans-serif;
+    font-family: Hack-Nerd-Font;
   padding: 20px;
-  color: #fff; /* Default text color to white for contrast */
+  color: #ddd; /* Light grey for text */
+  background-size: cover; /* Cover the entire background */
+  background-repeat: no-repeat; /* Prevent image from repeating */
 }
 
 h1 {
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
-  color: #ddd; /* Lighter grey for headings */
+  color: #fff; /* White for headings */
+  text-shadow: 2px 2px 4px #000000; /* Add a text shadow */
 }
 
 h2 {
   font-size: 30px;
-  color: #ddd;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .established {
   font-style: italic;
+  color: #ccc; /* Slightly lighter grey */
 }
 
 h1, h2, p {
@@ -27,12 +32,14 @@ h1, h2, p {
 
 .menu {
   width: 80%;
-  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  background-color: rgba(102, 51, 153, 0.5); /* A semi-transparent purple */
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
   max-width: 500px;
-  border: 1px solid #666; /* Darker grey border */
+  border: 1px solid #888; /* Medium grey border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 5px 5px 10px #000000; /* Add a shadow to the menu */
 }
 
 img {
@@ -40,12 +47,14 @@ img {
   margin-top: -25px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 50%; /* Make the image round */
+  box-shadow: 3px 3px 6px #000000;
 }
 
 hr {
   height: 2px;
-  background-color: #666; /* Dark grey */
-  border-color: #666;
+  background-color: #777; /* Medium grey */
+  border-color: #777;
 }
 
 .bottom-line {
@@ -61,6 +70,7 @@ h1, h2 {
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 18px;
+  color: #eee; /* Even lighter grey */
 }
 
 .flavor, .dessert {
@@ -77,6 +87,7 @@ h1, h2 {
 
 footer {
   font-size: 14px;
+  color: #aaa; /* Lighter grey for footer */
 }
 
 address {
@@ -88,11 +99,11 @@ address {
 }
 
 a {
-  color: #bbb; /* Light grey for links */
+  color: #eee; /* Light grey for links */
 }
 
 a:visited {
-  color: #bbb;
+  color: #eee;
 }
 
 a:hover {
