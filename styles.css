@@ -1,12 +1,12 @@
 body {
   background-image: url(https://cdn.pixabay.com/photo/2023/01/08/22/16/ai-generated-7706252_1280.jpg);
   font-family: 'Fira Code', monospace;
-  padding: 20px 20px 20px 200px; /* Add left padding for sidebar */
+  padding: 20px 20px 20px 200px;
   color: #FFFFFF;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh; /* Ensure full height */
-  position: relative; /* For potential sidebar positioning */
+  min-height: 100vh; 
+  position: relative; 
 }
 
 @keyframes pulse {
@@ -22,18 +22,18 @@ body {
 }
 
 h1 {
-  font-family: 'Goldman', cursive; /* New Title Font */
+  font-family: 'Bangers', cursive;
   font-size: 60px;
   margin-top: 0;
   margin-bottom: 15px;
-  color: #FFD700; /* Gold */
+  color: #FFD700; 
   text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000;
   text-align: center;
 }
 
 h2 {
   font-size: 30px;
-  color: #B0C4DE; /* Light Steel Blue */
+  color: #E2D1B3;
   text-shadow: 1px 1px 3px #222222;
 }
 
@@ -50,12 +50,12 @@ p {
 
 .menu {
   width: 80%;
-  background-color: rgba(30, 144, 255, 0.6); /* Cornflower Blue */
+  background-color: rgba(61, 112, 143, 0.7);
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
   max-width: 500px;
-  border: 1px solid #B0C4DE; /* Light Steel Blue */
+  border: 1px solid #E2D1B3;
   border-radius: 10px;
   box-shadow: 5px 5px 10px #222222;
 }
@@ -67,13 +67,13 @@ img {
   margin-right: auto;
   border-radius: 50%;
   box-shadow: 3px 3px 6px #222222;
-  border: 2px solid #DC143C; /* Crimson */
+  border: 2px solid #A82A2A; /* Crimson */
 }
 
 hr {
   height: 2px;
-  background-color: #B0C4DE; /* Light Steel Blue */
-  border-color: #B0C4DE;
+  background-color: #E2D1B3;
+  border-color: #E2D1B3;
 }
 
 .bottom-line {
@@ -102,7 +102,7 @@ hr {
 
 /* Button style for actions like "Order Now" */
 button {
-  background-color: #DC143C; /* Crimson */
+  background-color: #A82A2A; /* Crimson */
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -130,17 +130,17 @@ footer {
 
 footer a {
   text-decoration: underline;
-  color: #B0C4DE; /* Light Steel Blue */
+  color: #E2D1B3; /* Light Steel Blue */
 }
 
 footer a:hover {
-  color: #DC143C; /* Crimson */
+  color: #A82A2A; /* Crimson */
 }
 
 address {
   font-family: 'Fira Code', monospace; /* Back to readable font */
   font-size: 1.1em;
-  color: #FFFFFF;
+  color: #FFD700;
   text-shadow: 1px 1px 2px #000;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 8px 12px;
@@ -160,12 +160,12 @@ address {
 }
 
 .social-media a {
-  color: #DC143C; /* Crimson */
+  color: #A82A2A;
   font-size: 24px;
 }
 
 .social-media a:hover {
-  color: #B0C4DE; /* Light Steel Blue */
+  color: #E2D1B3; /* Light Steel Blue */
 }
 
 /* Hover effect on menu items */
