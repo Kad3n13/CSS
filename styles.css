@@ -1,7 +1,7 @@
 body {
   background-image: url(https://cdn.pixabay.com/photo/2023/01/08/22/16/ai-generated-7706252_1280.jpg);
   font-family: 'Fira Code', monospace;
-  padding: 20px 20px 20px 200px; /* Add left padding for sidebar */
+  padding: 20px 20px 20px 200px;
   color: #FFFFFF;
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,18 +22,18 @@ body {
 }
 
 h1 {
-  font-family: Impact, serif;
-  font-size: 40px;
+  font-family: 'Goldman', cursive;
+  font-size: 60px;
   margin-top: 0;
   margin-bottom: 15px;
-  color: #A82A2A;
-  text-shadow: 2px 2px 4px #222222;
+  color: #FFD700;
+  text-shadow: 2px 2px 4px #222;
   text-align: center;
 }
 
 h2 {
   font-size: 30px;
-  color: #E2D1B3;
+  color: #90EE90;
   text-shadow: 1px 1px 3px #222222;
 }
 
@@ -50,12 +50,12 @@ p {
 
 .menu {
   width: 80%;
-  background-color: rgba(61, 112, 143, 0.7);
+  background-color: rgba(220, 220, 220, 0.3);
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
   max-width: 500px;
-  border: 1px solid #E2D1B3;
+  border: 1px solid #FF4500;
   border-radius: 10px;
   box-shadow: 5px 5px 10px #222222;
 }
@@ -67,13 +67,13 @@ img {
   margin-right: auto;
   border-radius: 50%;
   box-shadow: 3px 3px 6px #222222;
-  border: 2px solid #A82A2A;
+  border: 2px solid #FF4500;
 }
 
 hr {
   height: 2px;
-  background-color: #E2D1B3;
-  border-color: #E2D1B3;
+  background-color: #FFD700;
+  border-color: #FFD700;
 }
 
 .bottom-line {
@@ -102,7 +102,7 @@ hr {
 
 /* Button style for actions like "Order Now" */
 button {
-  background-color: #A82A2A;
+  background-color: #FF4500;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -117,7 +117,7 @@ button {
 }
 
 button:hover {
-  background-color: #E2D1B3;
+  background-color: #90EE90;
 }
 
 /* FOOTER */
@@ -130,21 +130,21 @@ footer {
 
 footer a {
   text-decoration: underline;
-  color: #E2D1B3;
+  color: #90EE90;
 }
 
 footer a:hover {
-  color: #A82A2A;
+  color: #FF4500;
 }
 
 address {
-  font-family: 'Press Start 2P', monospace;
-  font-size: 1.2em;
+  font-family: 'Fira Code', monospace;
+  font-size: 1.1em;
   color: #FFD700;
-  text-shadow: 2px 2px 4px #000;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 5px 10px;
-  border: 1px solid #FF8C00;
+  text-shadow: 1px 1px 2px #000;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 8px 12px;
+  border: 1px solid #FFD700;
   border-radius: 5px;
   display: inline-block;
   text-align: center;
@@ -160,12 +160,12 @@ address {
 }
 
 .social-media a {
-  color: #A82A2A;
+  color: #FF4500;
   font-size: 24px;
 }
 
 .social-media a:hover {
-  color: #E2D1B3;
+  color: #90EE90;
 }
 
 /* Hover effect on menu items */
@@ -180,7 +180,7 @@ nav.sidebar {
     left: 0;
     width: 180px;
     height: 100vh;
-    background-color: rgba(30, 30, 30, 0.9); /* Dark sidebar background */
+    background-color: rgba(30, 30, 30, 0.9);
     padding: 20px;
     box-shadow: 3px 0 5px rgba(0, 0, 0, 0.3);
 }
@@ -205,5 +205,5 @@ nav.sidebar a {
 }
 
 nav.sidebar a:hover {
-    background-color: rgba(255, 69, 0, 0.3); /* OrangeRed hover */
+    background-color: rgba(255, 69, 0, 0.3);
 }
