@@ -21,16 +21,14 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-family: 'Bangers', cursive; /* New font for the title */
+  font-size: 50px; /* Adjusted for new font */
   margin-top: 0;
   margin-bottom: 15px;
-  color: #A82A2A;
-  animation: slight-move 3s infinite alternate;
-}
-
-@keyframes slight-move {
-  from { transform: translateY(0px); }
-  to { transform: translateY(-5px); }
+  color: #ff4da6; /* Neon pink color */
+  text-shadow: 0 0 5px #fff, 0 0 10px #ff4da6, 0 0 20px #ff4da6,
+    2px 2px 3px #000; /* Neon effect */
+  text-align: center; /* Ensure it's centered */
 }
 
 h2 {
