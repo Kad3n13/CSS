@@ -42,6 +42,13 @@ h2 {
   color: #90EE90;
   font-size: 30px;
 }
+/* CSS */
+.small {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 10px auto; /* optional: centers it */
+}
 
 h1,
 h2,
