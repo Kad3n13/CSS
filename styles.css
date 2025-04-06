@@ -59,6 +59,12 @@ p {
   border-radius: 10px;
   box-shadow: 5px 5px 10px #222222;
 }
+.small {
+  width: 60px;   /* Set a fixed width */
+  height: 60px;  /* Set a fixed height */
+  object-fit: contain; /* Ensures the aspect ratio is maintained */
+  margin-right: 20px;  /* Adds space between the image and the text */
+}
 
 img {
   display: block;
