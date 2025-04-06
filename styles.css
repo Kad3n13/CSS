@@ -139,7 +139,10 @@ footer a:hover {
   color: #A82A2A; /* Change color on hover */
 }
 
+.address {
+  font-family: 'Press Start 2P', monospace;
 /* Add social media links */
+  
 .social-media {
   display: flex;
   justify-content: center;
