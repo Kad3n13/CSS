@@ -53,6 +53,8 @@ img {
   border-radius: 50%;
   box-shadow: 3px 3px 6px #222;
   border: 2px solid #FF4500;
+  max-width: 100%; /* Makes images scale with the screen */
+  height: auto; /* Keeps the aspect ratio intact */
 }
 
 hr {
@@ -79,7 +81,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
-
+}
 
 .item p {
   display: flex;
@@ -264,5 +266,15 @@ address {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+  }
+
+  /* Add additional styling for small images */
+  img {
+    width: 70%; /* Scales the image size on smaller screens */
+    height: auto;
+  }
+
+  .item img {
+    margin-bottom: 15px; /* Adds space between image and text */
   }
 }
