@@ -1,6 +1,6 @@
 /* Base styles */
 body {
-  background-image: url(https://cdn.pixabay.com/photo/2023/01/08/22/16/ai-generated-7706252_1280.jpg);
+  background-image: url("https://cdn.pixabay.com/photo/2023/01/08/22/16/ai-generated-7706252_1280.jpg");
   font-family: 'Fira Code', monospace;
   padding: 20px;
   color: #FFFFFF;
@@ -9,20 +9,30 @@ body {
   min-height: 100vh;
   position: relative;
   box-sizing: border-box;
+  margin: 0; /* Reset default body margin */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
 }
 
 /* Text animations */
 @keyframes pulse {
-  0% { opacity: 0.9; }
-  50% { opacity: 1; }
-  100% { opacity: 0.9; }
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.9;
+  }
 }
 
 /* Headers */
 h1 {
   font-family: 'Goldman', cursive;
   font-size: 60px;
-  margin: 0 0 15px;
+  margin: 15px 0; /* Adjusted margin for better spacing */
   color: #FFD700;
   text-shadow: 2px 2px 4px #222;
   text-align: center;
@@ -33,6 +43,7 @@ h2 {
   color: #90EE90;
   text-shadow: 1px 1px 3px #222;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 h3 {
@@ -49,27 +60,30 @@ h3 {
   color: #90EE90;
   font-size: 30px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 p {
   text-align: center;
+  margin-bottom: 15px;
 }
 
 img {
   display: block;
-  margin: -25px auto 0;
+  margin: 10px auto; /* Adjusted margin for better spacing */
   border-radius: 50%;
   box-shadow: 3px 3px 6px #222;
   border: 2px solid #FF4500;
-  max-width: 100%; /* Makes images scale with the screen */
-  height: auto; /* Keeps the aspect ratio intact */
+  max-width: 200px;
+  height: auto;
 }
 
 hr {
   height: 2px;
   background-color: #FFD700;
   border: none;
-  margin: 20px 0;
+  margin: 20px auto; /* Center the hr element */
+  width: 70%; /* Adjust width as needed */
 }
 
 /* Menu box */
@@ -77,11 +91,12 @@ hr {
   width: 80%;
   max-width: 500px;
   background-color: rgba(220, 220, 220, 0.3);
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 20px;
   border: 1px solid #FF4500;
   border-radius: 10px;
   box-shadow: 5px 5px 10px #222;
+  text-align: center; /* Center text within the menu */
 }
 
 .item {
@@ -90,31 +105,32 @@ hr {
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
-  text-align: center; /* Align the text in the center */
+  text-align: center;
 }
 
 .item p {
   font-size: 18px;
   color: #FFFFFF;
   text-shadow: 1px 1px 2px #222;
-  margin: 5px 0; /* Adjust spacing between text elements */
+  margin: 5px 0;
 }
 
 .flavor,
 .dessert {
   font-size: 18px;
-  text-align: left;
-  flex: 1;
+  text-align: center; /* Changed to center */
 }
 
 .price {
   font-size: 18px;
-  text-align: right;
-  width: 100px;
+  text-align: center; /* Changed to center */
+  width: 100%; /* Adjusted width */
 }
 
 .item img {
-  margin-bottom: 15px; /* Adds space between image and text */
+  margin-bottom: 15px;
+  max-width: 150px; /* Adjust image size */
+  height: auto;
 }
 
 .item:hover {
@@ -131,7 +147,7 @@ button {
   font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
-  margin: 20px auto 0;
+  margin: 20px auto;
   display: block;
   transition: background-color 0.3s ease;
 }
@@ -150,6 +166,7 @@ nav.sidebar {
   background-color: rgba(30, 30, 30, 0.9);
   padding: 20px;
   box-shadow: 3px 0 5px rgba(0, 0, 0, 0.3);
+  overflow-y: auto; /* Add scroll for long sidebars */
 }
 
 nav.sidebar ul {
@@ -193,7 +210,7 @@ footer a:hover {
 }
 
 address {
-  font-family: 'Play 2 play', italic;
+  font-family: 'Play 2 play', monospace;
   font-size: 1.1em;
   color: #FFD700;
   text-shadow: 1px 1px 2px #000;
@@ -226,6 +243,26 @@ address {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  body {
+    padding: 10px; /* Reduced padding for smaller screens */
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .established {
+    font-size: 24px;
+  }
+
   nav.sidebar {
     position: static;
     width: 100%;
@@ -249,22 +286,19 @@ address {
     margin-bottom: 0;
   }
 
+  nav.sidebar a {
+    padding: 8px;
+    font-size: 16px;
+  }
+
   .menu {
     width: 100%;
     max-width: 100%;
     padding: 15px;
   }
 
-  h1 {
-    font-size: 40px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  h3 {
-    font-size: 18px;
+  .item {
+    flex-direction: column;
   }
 
   .item p {
@@ -274,24 +308,13 @@ address {
   .flavor,
   .dessert,
   .price {
-    display: block;
-    width: 100%;
     text-align: center;
+    width: 100%;
   }
 
   .social-media {
-    flex-direction: column;
+    flex-direction: row; /* Keep social media icons in a row */
+    justify-content: center; /* Center the icons */
     align-items: center;
-    gap: 10px;
-  }
-
-  /* Add additional styling for small images */
-  img {
-    width: 70%; /* Scales the image size on smaller screens */
-    height: auto;
-  }
-
-  .item img {
-    margin-bottom: 15px; /* Adds space between image and text */
   }
 }
