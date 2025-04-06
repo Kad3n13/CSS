@@ -5,87 +5,93 @@ body {
   color: #FFFFFF;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
-  position: relative;
-  box-sizing: border-box;
+  animation: pulse 5s infinite;
 }
 
-/* Text animations */
 @keyframes pulse {
-  0% { opacity: 0.9; }
-  50% { opacity: 1; }
-  100% { opacity: 0.9; }
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.9;
+  }
 }
 
-/* Headers */
 h1 {
-  font-family: 'Goldman', cursive;
-  font-size: 60px;
-  margin: 0 0 15px;
-  color: #FFD700;
-  text-shadow: 2px 2px 4px #222;
-  text-align: center;
+  font-family: 'Bangers', cursive; /* New font for the title */
+  font-size: 50px; /* Adjusted for new font */
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #ff4da6; /* Neon pink color */
+  text-shadow: 0 0 5px #fff, 0 0 10px #ff4da6, 0 0 20px #ff4da6,
+    2px 2px 3px #000; /* Neon effect */
+  text-align: center; /* Ensure it's centered */
 }
 
 h2 {
   font-size: 30px;
-  color: #90EE90;
-  text-shadow: 1px 1px 3px #222;
-  text-align: center;
+  color: #E2D1B3;
+  text-shadow: 1px 1px 3px #222222;
 }
 
 .established {
-  font-family: 'Goldman', cursive;
   font-style: italic;
-  color: #90EE90;
-  font-size: 30px;
-  text-align: center;
+  color: #ccc;
 }
 
+h1,
+h2,
 p {
   text-align: center;
 }
 
+.menu {
+  width: 80%;
+  background-color: rgba(61, 112, 143, 0.7);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+  border: 1px solid #E2D1B3;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #222222;
+}
+
 img {
   display: block;
-  margin: -25px auto 0;
+  margin-top: -25px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 50%;
-  box-shadow: 3px 3px 6px #222;
-  border: 2px solid #FF4500;
+  box-shadow: 3px 3px 6px #222222;
+  border: 2px solid #A82A2A;
 }
 
 hr {
   height: 2px;
-  background-color: #FFD700;
-  border: none;
-  margin: 20px 0;
+  background-color: #E2D1B3;
+  border-color: #E2D1B3;
 }
 
-/* Menu box */
-.menu {
-  width: 80%;
-  max-width: 500px;
-  background-color: rgba(220, 220, 220, 0.3);
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #FF4500;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px #222;
+.bottom-line {
+  margin-top: 25px;
 }
 
-.item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-  
-/* Menu item styling */
+h1,
+h2 {
+  font-family: Impact, serif;
+}
+
 .item p {
   display: inline-block;
-  margin: 5px 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
   font-size: 18px;
   color: #FFFFFF;
-  text-shadow: 1px 1px 2px #222;
+  text-shadow: 1px 1px 2px #222222;
 }
 
 .flavor,
@@ -99,65 +105,27 @@ hr {
   width: 25%;
 }
 
-.item:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  transition: background-color 0.3s ease;
-}
-
-/* Button styles */
+/* Button style for actions like "Order Now" */
 button {
-  background-color: #FF4500;
+  background-color: #A82A2A;
   color: #fff;
   border: none;
   padding: 10px 20px;
   font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
-  margin: 20px auto 0;
-  display: block;
   transition: background-color 0.3s ease;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 button:hover {
-  background-color: #90EE90;
+  background-color: #E2D1B3;
 }
 
-/* Sidebar */
-nav.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 180px;
-  height: 100vh;
-  background-color: rgba(30, 30, 30, 0.9);
-  padding: 20px;
-  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.3);
-}
-
-nav.sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav.sidebar li {
-  margin-bottom: 15px;
-}
-
-nav.sidebar a {
-  color: #E0E0E0;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-nav.sidebar a:hover {
-  background-color: rgba(255, 69, 0, 0.3);
-}
-
-/* Footer */
+/* FOOTER */
 footer {
   font-size: 14px;
   color: #aaa;
@@ -167,28 +135,27 @@ footer {
 
 footer a {
   text-decoration: underline;
-  color: #90EE90;
+  color: #E2D1B3;
 }
 
 footer a:hover {
-  color: #FF4500;
+  color: #A82A2A; /* Change color on hover */
 }
 
 address {
-  font-family: 'Fira Code', monospace;
-  font-size: 1.1em;
-  color: #FFD700;
-  text-shadow: 1px 1px 2px #000;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 8px 12px;
-  border: 1px solid #FFD700;
-  border-radius: 5px;
-  display: inline-block;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.2em; /* Larger size for emphasis */
+  color: #FFD700; /* Yellow/Gold - Eye-catching color */
+  text-shadow: 2px 2px 4px #000; /* Stronger shadow */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 5px 10px; /* Add padding around the address */
+  border: 1px solid #FF8C00; /* Orange border for highlight */
+  border-radius: 5px; /* Slightly rounded corners */
+  display: inline-block; /* Ensures background fits the content */
   text-align: center;
-  margin-top: 10px;
 }
+/* Add social media links */
 
-/* Social media */
 .social-media {
   display: flex;
   justify-content: center;
@@ -197,69 +164,40 @@ address {
 }
 
 .social-media a {
-  color: #FF4500;
+  color: #A82A2A;
   font-size: 24px;
-  transition: color 0.3s ease;
 }
 
 .social-media a:hover {
-  color: #90EE90;
+  color: #E2D1B3; /* Yellow hover effect */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  nav.sidebar {
-    position: static;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    box-shadow: none;
-    background-color: rgba(30, 30, 30, 0.8);
-  }
+/* Hover effect on menu items */
+.item:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly lighten on hover */
+  transition: background-color 0.3s ease;
+}
 
-  nav.sidebar ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
 
-  nav.sidebar li {
-    margin-bottom: 0;
-  }
+—
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
 
-  .menu {
-    width: 100%;
-    max-width: 100%;
-    padding: 15px;
-  }
+.social-media a {
+  color: #A82A2A;
+  font-size: 24px;
+}
 
-  h1 {
-    font-size: 40px;
-  }
+.social-media a:hover {
+  color: #E2D1B3; /* Yellow hover effect */
+}
 
-  h2 {
-    font-size: 24px;
-  }
-
-  .item p {
-    font-size: 16px;
-  }
-
-  .flavor,
-  .dessert,
-  .price {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-
-  .social-media {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
+/* Hover effect on menu items */
+.item:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly lighten on hover */
+  transition: background-color 0.3s ease;
 }
