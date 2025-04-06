@@ -1,3 +1,4 @@
+body {
   background-image: url(https://cdn.pixabay.com/photo/2023/01/08/22/16/ai-generated-7706252_1280.jpg);
   font-family: 'Fira Code', monospace;
   padding: 20px;
@@ -7,9 +8,6 @@
   min-height: 100vh;
   position: relative;
   box-sizing: border-box;
-  display: flex; /* Use flexbox to center content */
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Horizontally center children */
 }
 
 /* Text animations */
@@ -68,7 +66,7 @@ hr {
   width: 80%;
   max-width: 500px;
   background-color: rgba(220, 220, 220, 0.3);
-  margin: 20px auto; /* Add margin to the top and bottom */
+  margin: 0 auto;
   padding: 20px;
   border: 1px solid #FF4500;
   border-radius: 10px;
@@ -80,7 +78,6 @@ hr {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
-}
   
 /* Menu item styling */
 .item p {
@@ -166,7 +163,6 @@ footer {
   color: #aaa;
   text-align: center;
   padding: 20px;
-  margin-top: auto; /* Push the footer to the bottom */
 }
 
 footer a {
