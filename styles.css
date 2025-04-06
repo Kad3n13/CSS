@@ -1,6 +1,6 @@
 /* Base styles */
 body {
-  background-image: url(Anime.jpeg);
+  background-image: url(Anime.png);
   font-family: 'Fira Code', monospace;
   padding: 20px;
   color: #FFFFFF;
@@ -178,17 +178,16 @@ footer a:hover {
 }
 
 address {
-  font-family: 'Play 2 play', italic;
-  font-size: 1.1em;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.2em;
   color: #FFD700;
-  text-shadow: 1px 1px 2px #000;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 8px 12px;
-  border: 1px solid #FFD700;
-  border-radius: 5px;
+  text-shadow: 2px 2px 4px #000;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  border: 1px solid #FF8C00;
+  border-radius: 5px; 
   display: inline-block;
   text-align: center;
-  margin-top: 10px;
 }
 
 /* Social media */
