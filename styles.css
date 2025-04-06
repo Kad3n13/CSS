@@ -1,12 +1,12 @@
 body {
   background-image: url(https://cdn.pixabay.com/photo/2023/01/08/22/16/ai-generated-7706252_1280.jpg);
   font-family: 'Fira Code', monospace;
-  padding: 20px 20px 20px 200px;
+  padding: 20px 20px 20px 200px; /* Add left padding for sidebar */
   color: #FFFFFF;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh; 
-  position: relative; 
+  min-height: 100vh;
+  position: relative;
 }
 
 @keyframes pulse {
@@ -22,12 +22,12 @@ body {
 }
 
 h1 {
-  font-family: 'Bangers', cursive;
-  font-size: 60px;
+  font-family: Impact, serif;
+  font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
-  color: #FFD700; 
-  text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000;
+  color: #A82A2A;
+  text-shadow: 2px 2px 4px #222222;
   text-align: center;
 }
 
@@ -67,7 +67,7 @@ img {
   margin-right: auto;
   border-radius: 50%;
   box-shadow: 3px 3px 6px #222222;
-  border: 2px solid #A82A2A; /* Crimson */
+  border: 2px solid #A82A2A;
 }
 
 hr {
@@ -102,7 +102,7 @@ hr {
 
 /* Button style for actions like "Order Now" */
 button {
-  background-color: #A82A2A; /* Crimson */
+  background-color: #A82A2A;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -117,7 +117,7 @@ button {
 }
 
 button:hover {
-  background-color: #B0C4DE; /* Light Steel Blue */
+  background-color: #E2D1B3;
 }
 
 /* FOOTER */
@@ -130,25 +130,25 @@ footer {
 
 footer a {
   text-decoration: underline;
-  color: #E2D1B3; /* Light Steel Blue */
+  color: #E2D1B3;
 }
 
 footer a:hover {
-  color: #A82A2A; /* Crimson */
+  color: #A82A2A;
 }
 
 address {
-  font-family: 'Fira Code', monospace; /* Back to readable font */
-  font-size: 1.1em;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.2em;
   color: #FFD700;
-  text-shadow: 1px 1px 2px #000;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 8px 12px;
-  border: 1px solid #4682B4; /* Steel Blue */
+  text-shadow: 2px 2px 4px #000;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  border: 1px solid #FF8C00;
   border-radius: 5px;
   display: inline-block;
   text-align: center;
-  margin-top: 10px; /* Add some top margin */
+  margin-top: 10px;
 }
 /* Add social media links */
 
@@ -165,11 +165,45 @@ address {
 }
 
 .social-media a:hover {
-  color: #E2D1B3; /* Light Steel Blue */
+  color: #E2D1B3;
 }
 
 /* Hover effect on menu items */
 .item:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Slightly lighten on hover */
+  background-color: rgba(255, 255, 255, 0.2);
   transition: background-color 0.3s ease;
+}
+
+nav.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 100vh;
+    background-color: rgba(30, 30, 30, 0.9); /* Dark sidebar background */
+    padding: 20px;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+nav.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav.sidebar li {
+    margin-bottom: 15px;
+}
+
+nav.sidebar a {
+    color: #E0E0E0;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav.sidebar a:hover {
+    background-color: rgba(255, 69, 0, 0.3); /* OrangeRed hover */
 }
