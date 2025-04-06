@@ -1,11 +1,11 @@
 body {
   background-image: url(https://cdn.pixabay.com/photo/2023/01/08/22/16/ai-generated-7706252_1280.jpg);
-  font-family: sans-serif;
+  font-family: 'Fira Code', monospace;
   padding: 20px;
-  color: #FFFFFF; /* Light text */
+  color: #FFFFFF;
   background-size: cover;
   background-repeat: no-repeat;
-  animation: pulse 5s infinite; /* Slow pulse animation */
+  animation: pulse 5s infinite;
 }
 
 @keyframes pulse {
@@ -24,19 +24,19 @@ h1 {
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
-  color: #A82A2A; /* Red accent */
-  text-shadow: 2px 2px 4px #222222; /* Dark shadow */
+  color: #A82A2A;
+  text-shadow: 2px 2px 4px #222222;
 }
 
 h2 {
   font-size: 30px;
-  color: #E2D1B3; /* Yellow tone */
+  color: #E2D1B3;
   text-shadow: 1px 1px 3px #222222;
 }
 
 .established {
   font-style: italic;
-  color: #ccc; /* Slightly lighter grey */
+  color: #ccc;
 }
 
 h1,
@@ -47,14 +47,14 @@ p {
 
 .menu {
   width: 80%;
-  background-color: rgba(61, 112, 143, 0.7); /* Dark blue semi-transparent */
+  background-color: rgba(61, 112, 143, 0.7);
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
   max-width: 500px;
-  border: 1px solid #E2D1B3; /* Light yellow border */
+  border: 1px solid #E2D1B3;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px #222222; /* Dark shadow */
+  box-shadow: 5px 5px 10px #222222;
 }
 
 img {
@@ -63,13 +63,13 @@ img {
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
-  box-shadow: 3px 3px 6px #222222; /* Dark shadow */
-  border: 2px solid #A82A2A; /* Red border */
+  box-shadow: 3px 3px 6px #222222;
+  border: 2px solid #A82A2A;
 }
 
 hr {
   height: 2px;
-  background-color: #E2D1B3; /* Light yellow */
+  background-color: #E2D1B3;
   border-color: #E2D1B3;
 }
 
@@ -87,8 +87,8 @@ h2 {
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 18px;
-  color: #FFFFFF; /* White text */
-  text-shadow: 1px 1px 2px #222222; /* Dark shadow */
+  color: #FFFFFF;
+  text-shadow: 1px 1px 2px #222222;
 }
 
 .flavor,
@@ -104,8 +104,8 @@ h2 {
 
 /* Button style for actions like "Order Now" */
 button {
-  background-color: #A82A2A; /* Red background */
-  color: #fff; /* White text */
+  background-color: #A82A2A;
+  color: #fff;
   border: none;
   padding: 10px 20px;
   font-size: 18px;
@@ -119,13 +119,13 @@ button {
 }
 
 button:hover {
-  background-color: #E2D1B3; /* Yellow background on hover */
+  background-color: #E2D1B3;
 }
 
 /* FOOTER */
 footer {
   font-size: 14px;
-  color: #aaa; /* Lighter grey for footer */
+  color: #aaa;
   text-align: center;
   padding: 20px;
 }
@@ -141,8 +141,18 @@ footer a:hover {
 
 address {
   font-family: 'Press Start 2P', monospace;
+  font-size: 1.2em; /* Larger size for emphasis */
+  color: #FFD700; /* Yellow/Gold - Eye-catching color */
+  text-shadow: 2px 2px 4px #000; /* Stronger shadow */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 5px 10px; /* Add padding around the address */
+  border: 1px solid #FF8C00; /* Orange border for highlight */
+  border-radius: 5px; /* Slightly rounded corners */
+  display: inline-block; /* Ensures background fits the content */
+  text-align: center;
+}
 /* Add social media links */
-  
+
 .social-media {
   display: flex;
   justify-content: center;
