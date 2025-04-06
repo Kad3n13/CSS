@@ -1,26 +1,28 @@
-/* Base styles (desktop first) */
+/* Base styles */
 body {
   background-image: url(https://cdn.pixabay.com/photo/2023/01/08/22/16/ai-generated-7706252_1280.jpg);
   font-family: 'Fira Code', monospace;
-  padding: 20px 20px 20px 200px;
+  padding: 20px;
   color: #FFFFFF;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
   position: relative;
+  box-sizing: border-box;
 }
 
+/* Text animations */
 @keyframes pulse {
   0% { opacity: 0.9; }
   50% { opacity: 1; }
   100% { opacity: 0.9; }
 }
 
+/* Headers */
 h1 {
   font-family: 'Goldman', cursive;
   font-size: 60px;
-  margin-top: 0;
-  margin-bottom: 15px;
+  margin: 0 0 15px;
   color: #FFD700;
   text-shadow: 2px 2px 4px #222;
   text-align: center;
@@ -30,6 +32,7 @@ h2 {
   font-size: 30px;
   color: #90EE90;
   text-shadow: 1px 1px 3px #222;
+  text-align: center;
 }
 
 .established {
@@ -37,21 +40,31 @@ h2 {
   font-style: italic;
   color: #90EE90;
   font-size: 30px;
-}
-
-.small {
-  width: 80px;
-  height: auto;
-  display: block;
-  margin: 10px auto;
-}
-
-h1, h2, p {
   text-align: center;
 }
 
+p {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: -25px auto 0;
+  border-radius: 50%;
+  box-shadow: 3px 3px 6px #222;
+  border: 2px solid #FF4500;
+}
+
+hr {
+  height: 2px;
+  background-color: #FFD700;
+  border: none;
+  margin: 20px 0;
+}
+
+/* Menu box */
 .menu {
-  width: 90%;
+  width: 80%;
   max-width: 500px;
   background-color: rgba(220, 220, 220, 0.3);
   margin: 0 auto;
@@ -61,30 +74,10 @@ h1, h2, p {
   box-shadow: 5px 5px 10px #222;
 }
 
-img {
-  display: block;
-  margin-top: -25px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  box-shadow: 3px 3px 6px #222;
-  border: 2px solid #FF4500;
-}
-
-hr {
-  height: 2px;
-  background-color: #FFD700;
-  border-color: #FFD700;
-}
-
-.bottom-line {
-  margin-top: 25px;
-}
-
+/* Menu item styling */
 .item p {
   display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 5px 0;
   font-size: 18px;
   color: #FFFFFF;
   text-shadow: 1px 1px 2px #222;
@@ -101,6 +94,12 @@ hr {
   width: 25%;
 }
 
+.item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+/* Button styles */
 button {
   background-color: #FF4500;
   color: #fff;
@@ -109,66 +108,16 @@ button {
   font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin: 20px auto 0 auto;
+  margin: 20px auto 0;
   display: block;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #90EE90;
 }
 
-footer {
-  font-size: 14px;
-  color: #aaa;
-  text-align: center;
-  padding: 20px;
-}
-
-footer a {
-  text-decoration: underline;
-  color: #90EE90;
-}
-
-footer a:hover {
-  color: #FF4500;
-}
-
-address {
-  font-family: 'Fira Code', monospace;
-  font-size: 1.1em;
-  color: #FFD700;
-  text-shadow: 1px 1px 2px #000;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 8px 12px;
-  border: 1px solid #FFD700;
-  border-radius: 5px;
-  display: inline-block;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.social-media {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.social-media a {
-  color: #FF4500;
-  font-size: 24px;
-}
-
-.social-media a:hover {
-  color: #90EE90;
-}
-
-.item:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  transition: background-color 0.3s ease;
-}
-
+/* Sidebar */
 nav.sidebar {
   position: fixed;
   top: 0;
@@ -203,34 +152,83 @@ nav.sidebar a:hover {
   background-color: rgba(255, 69, 0, 0.3);
 }
 
-/* 🔥 RESPONSIVE DESIGN FOR MOBILE 🔥 */
-@media (max-width: 768px) {
-  body {
-    padding: 20px;
-  }
+/* Footer */
+footer {
+  font-size: 14px;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+}
 
+footer a {
+  text-decoration: underline;
+  color: #90EE90;
+}
+
+footer a:hover {
+  color: #FF4500;
+}
+
+address {
+  font-family: 'Fira Code', monospace;
+  font-size: 1.1em;
+  color: #FFD700;
+  text-shadow: 1px 1px 2px #000;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 8px 12px;
+  border: 1px solid #FFD700;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Social media */
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-media a {
+  color: #FF4500;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #90EE90;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   nav.sidebar {
-    position: relative;
+    position: static;
     width: 100%;
     height: auto;
+    padding: 10px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     box-shadow: none;
-    padding: 10px 0;
+    background-color: rgba(30, 30, 30, 0.8);
   }
 
   nav.sidebar ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
   }
 
   nav.sidebar li {
-    margin: 5px 10px;
+    margin-bottom: 0;
   }
 
   .menu {
-    width: 95%;
+    width: 100%;
+    max-width: 100%;
     padding: 15px;
   }
 
@@ -256,6 +254,7 @@ nav.sidebar a:hover {
 
   .social-media {
     flex-direction: column;
+    align-items: center;
     gap: 10px;
   }
 }
