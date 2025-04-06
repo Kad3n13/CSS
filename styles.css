@@ -1,4 +1,3 @@
-/* Base styles */
 body {
   background-image: url(https://cdn.pixabay.com/photo/2023/01/08/22/16/ai-generated-7706252_1280.jpg);
   font-family: 'Fira Code', monospace;
@@ -9,16 +8,22 @@ body {
   min-height: 100vh;
   position: relative;
   box-sizing: border-box;
-  display: flex; /* Use flexbox to center content */
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Horizontally center children */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Text animations */
 @keyframes pulse {
-  0% { opacity: 0.9; }
-  50% { opacity: 1; }
-  100% { opacity: 0.9; }
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.9;
+  }
 }
 
 /* Headers */
@@ -70,7 +75,7 @@ hr {
   width: 80%;
   max-width: 500px;
   background-color: rgba(220, 220, 220, 0.3);
-  margin: 20px auto; /* Add margin to the top and bottom */
+  margin: 20px auto;
   padding: 20px;
   border: 1px solid #FF4500;
   border-radius: 10px;
@@ -83,7 +88,7 @@ hr {
   align-items: center;
   margin-bottom: 10px;
 }
-  
+
 /* Menu item styling */
 .item p {
   display: inline-block;
@@ -129,14 +134,12 @@ button:hover {
 
 /* Sidebar */
 nav.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 180px;
-  height: 100vh;
+  height: auto; /* Adjust height as needed */
   background-color: rgba(30, 30, 30, 0.9);
   padding: 20px;
   box-shadow: 3px 0 5px rgba(0, 0, 0, 0.3);
+  margin-right: 20px; /* Add some spacing between the sidebar and the content */
 }
 
 nav.sidebar ul {
@@ -168,7 +171,7 @@ footer {
   color: #aaa;
   text-align: center;
   padding: 20px;
-  margin-top: auto; /* Push the footer to the bottom */
+  margin-top: auto;
 }
 
 footer a {
@@ -215,7 +218,6 @@ address {
 /* Responsive Design */
 @media (max-width: 768px) {
   nav.sidebar {
-    position: static;
     width: 100%;
     height: auto;
     padding: 10px;
@@ -224,6 +226,7 @@ address {
     flex-wrap: wrap;
     box-shadow: none;
     background-color: rgba(30, 30, 30, 0.8);
+    margin-right: 0;
   }
 
   nav.sidebar ul {
@@ -268,4 +271,19 @@ address {
     align-items: center;
     gap: 10px;
   }
+}
+
+/* Wrap the sidebar and menu in a container */
+.container {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: flex-start; /* Align items to the top */
+  width: 100%;
+  max-width: 900px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Modify the body to accommodate the container */
+body {
+  /* Removed align-items: center; */
 }
