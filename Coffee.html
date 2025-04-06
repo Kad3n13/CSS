@@ -1,94 +1,116 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cafe Menu</title>
+    <title>CyberBrew Cafe</title>
     <link href="styles.css" rel="stylesheet"/>
-  </head>
-  <body>
+</head>
+<body>
     <div class="menu">
-      <main>
-        <h1>CAMPER CAFE</h1>
-        <p class="established">Est. 2020</p>
-        <hr>
-        <section>
-          <h2>Coffee</h2>
-          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon"/>
-          <article class="item">
-            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Hazelnut</p><p class="price">4.00</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Mocha</p><p class="price">4.50</p>
-          </article>
-        </section>
-        <section>
-          <h2>Desserts</h2>
-          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon"/>
-          <article class="item">
-            <p class="dessert">Donut</p><p class="price">1.50</p>
-          </article>
-          <article class="item">
-            <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
-          </article>
-          <article class="item">
-            <p class="dessert">Cheesecake</p><p class="price">3.00</p>
-          </article>
-          <article class="item">
-            <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
-          </article>
-        </section>
-        <section class="data-menu">
-  <h2>Data Brews</h2>
-  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135692.png" alt="data icon" class="data-icon">
-  <article class="item">
-    <p class="product">Quantum Latte</p><p class="price">5.00 ETH</p>
-  </article>
-  <article class="item">
-    <p class="product">Firewall Mocha</p><p class="price">3.50 BTC</p>
-  </article>
-  <article class="item">
-    <p class="product">Encryption Espresso</p><p class="price">4.25 XMR</p>
-  </article>
-</section>
+        <main>
+            <!-- Header Section -->
+            <header class="cyber-header">
+                <h1>CYBERBREW CAFE</h1>
+                <p class="established">Est. 2042</p>
+                <div class="neon-glow"></div>
+            </header>
+            
+            <hr class="neon-hr">
 
-<!-- Add a neon divider -->
-<div class="neon-divider"></div>
+            <!-- Coffee Section -->
+            <section class="cyber-section">
+                <h2><span class="glow-text">Coffee</span> <span class="ascii-art">(&#x2615;)</span></h2>
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" 
+                     alt="neon coffee icon" 
+                     class="cyber-icon">
+                
+                <article class="item">
+                    <p class="flavor">Neon Noir Espresso</p>
+                    <p class="price">3.00</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Hologram Macchiato</p>
+                    <p class="price">3.75</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Quantum Pumpkin Spice</p>
+                    <p class="price">3.50</p>
+                </article>
+            </section>
 
-<!-- Add a hacker terminal section -->
-<section class="terminal">
-  <h2>Live Data Feed</h2>
-  <div class="code-display">
-    <pre class="asm-code">
-      <code>
-MOV AX, [COFFEE]
-ADD AX, 0xCAFE
-JMP PROCESS_DATA
-      </code>
-    </pre>
-  </div>
-</section>
+            <!-- Desserts Section -->
+            <section class="cyber-section">
+                <h2><span class="glow-text">Desserts</span> <span class="ascii-art">(&#x1F36A;)</span></h2>
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" 
+                     alt="holographic pie icon" 
+                     class="cyber-icon">
+                
+                <article class="item">
+                    <p class="dessert">Glitch Donut</p>
+                    <p class="price">1.50</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Firewall Cheesecake</p>
+                    <p class="price">3.00</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Neon Cinnamon Roll</p>
+                    <p class="price">2.50</p>
+                </article>
+            </section>
 
-      </main>
-      <hr class="bottom-line">
-      <footer>
-        <address>
-          <p>
-            <a href="https://www.freecodecamp.org" target="_blank">Visit our website</a>
-          </p>
-          <p class="address">123 Free Code Camp Drive</p>
-          
-        </address>
-      </footer>
+            <!-- Data Brews Section -->
+            <section class="cyber-section data-menu">
+                <h2><span class="glow-text">Data Brews</span> <span class="ascii-art">(&#x1F4BB;)</span></h2>
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135692.png" 
+                     alt="data stream icon" 
+                     class="cyber-icon data-icon">
+                
+                <article class="item">
+                    <p class="product">Quantum Latte</p>
+                    <p class="price">5.00 ETH</p>
+                </article>
+                <article class="item">
+                    <p class="product">Encryption Mocha</p>
+                    <p class="price">3.50 XMR</p>
+                </article>
+                <article class="item">
+                    <p class="product">Firewall Espresso</p>
+                    <p class="price">4.25 BTC</p>
+                </article>
+            </section>
+
+            <!-- Hacker Terminal -->
+            <section class="terminal">
+                <h2 class="glow-text">Live Data Feed</h2>
+                <div class="code-display">
+                    <pre class="asm-code">
+                        <code>
+<span class="code-keyword">MOV</span> AX, [COFFEE]
+<span class="code-keyword">ADD</span> AX, <span class="code-hex">0xCAFE</span>
+<span class="code-keyword">JMP</span> <span class="code-label">PROCESS_DATA</span>
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <hr class="neon-hr bottom-line">
+            
+            <footer class="cyber-footer">
+                <address>
+                    <p>
+                        <a href="https://www.freecodecamp.org" target="_blank" class="neon-link">
+                            Access Mainframe
+                        </a>
+                    </p>
+                    <p class="address">001011010101 Cyber Lane</p>
+                    <p class="disclaimer">*All transactions encrypted with SHA-256</p>
+                </address>
+            </footer>
+        </main>
     </div>
-  </body>
+</body>
 </html>
