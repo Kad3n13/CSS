@@ -1,10 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cafe Menu</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>CyberBrew Cafe</title>
+    <style>
+      body {
+        background-image: url(https://cdn.pixabay.com/photo/2023/01/08/22/16/ai-generated-7706252_1280.jpg);
+        font-family: sans-serif;
+        padding: 20px;
+        color: #FFFFFF; /* Light text */
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      h1 {
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: #A82A2A; /* Red accent */
+        text-shadow: 2px 2px 4px #222222; /* Dark shadow */
+      }
+
+      h2 {
+        font-size: 30px;
+        color: #E2D1B3; /* Yellow tone */
+        text-shadow: 1px 1px 3px #222222;
+      }
+
+      .established {
+        font-style: italic;
+        color: #ccc; /* Slightly lighter grey */
+      }
+
+      h1,
+      h2,
+      p {
+        text-align: center;
+      }
+
+      .menu {
+        width: 80%;
+        background-color: rgba(61, 112, 143, 0.7); /* Dark blue semi-transparent */
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        max-width: 500px;
+        border: 1px solid #E2D1B3; /* Light yellow border */
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #222222; /* Dark shadow */
+      }
+
+      img {
+        display: block;
+        margin-top: -25px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        box-shadow: 3px 3px 6px #222222; /* Dark shadow */
+        border: 2px solid #A82A2A; /* Red border */
+      }
+
+      hr {
+        height: 2px;
+        background-color: #E2D1B3; /* Light yellow */
+        border-color: #E2D1B3;
+      }
+
+      .bottom-line {
+        margin-top: 25px;
+      }
+
+      h1,
+      h2 {
+        font-family: Impact, serif;
+      }
+
+      .item p {
+        display: inline-block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 18px;
+        color: #FFFFFF; /* White text */
+        text-shadow: 1px 1px 2px #222222; /* Dark shadow */
+      }
+
+      .flavor,
+      .dessert {
+        text-align: left;
+        width: 75%;
+      }
+
+      .price {
+        text-align: right;
+        width: 25%;
+      }
+
+      /* FOOTER */
+
+      footer {
+        font-size: 14px;
+        color: #aaa; /* Lighter grey for footer */
+      }
+
+      address {
+        font-style: normal;
+      }
+
+      .address {
+        margin-bottom: 5px;
+      }
+
+      a {
+        color: #A82A2A; /* Red accent */
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: #A82A2A;
+      }
+
+      a:hover {
+        color: #E2D1B3; /* Yellow hover */
+      }
+
+      a:active {
+        color: #E2D1B3;
+      }
+       .cyber-address {
+        font-style: normal; /* Removes the default italic styling */
+        font-size: 16px; /* Adjust as needed */
+        color: #E2D1B3; /* Light Yellow - Text color */
+        line-height: 1.4; /* Adjust line spacing */
+        text-shadow: 1px 1px 2px #222222; /* Add subtle shadow */
+      }
+
+      /* Style individual lines if using <p> tags */
+      .cyber-address p {
+        margin-bottom: 5px; /* Adjust spacing between lines */
+      }
+    </style>
   </head>
   <body>
     <div class="menu">
@@ -66,22 +201,12 @@
       </main>
       <hr class="bottom-line" />
       <footer>
-        <address>
-          <p>
-            <a href="https://kad3n13.github.io/CSS/Coffee.html" target="_blank">Visit our website</a>
-          </p>
-          <p class="address">Orbit Overflow<br /> 0xDB1ackH01e INTRPT13 Singularity Drive<br />
-NullSector-1337 NW-404<br />
-Aerilon Prime</p>
+        <address class="cyber-address">
+          CyberBrew Cafe<br />
+          0xDB1ackH01e INTRPT13 Singularity Drive<br />
+          NullSector-1337, NW-404<br />
+          Aerilon Prime
         </address>
-        <!-- Social media links -->
-        <div class="social-media">
-          <a href="https://facebook.com" target="_blank">Facebook</a>
-          <a href="https://twitter.com" target="_blank">Twitter</a>
-          <a href="https://instagram.com" target="_blank">Instagram</a>
-        </div>
-        <!-- Order Now button -->
-        <button>Order Now</button>
       </footer>
     </div>
   </body>
