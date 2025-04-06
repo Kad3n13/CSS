@@ -25,7 +25,12 @@ h1 {
   margin-top: 0;
   margin-bottom: 15px;
   color: #A82A2A;
-  text-shadow: 2px 2px 4px #222222;
+  animation: slight-move 3s infinite alternate;
+}
+
+@keyframes slight-move {
+  from { transform: translateY(0px); }
+  to { transform: translateY(-5px); }
 }
 
 h2 {
