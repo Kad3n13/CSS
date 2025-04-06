@@ -35,6 +35,14 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-size: 20px;
+  color: #FFD700;
+  margin-top: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 3px #222;
+}
+
 .established {
   font-family: 'Goldman', cursive;
   font-style: italic;
@@ -78,30 +86,35 @@ hr {
 
 .item {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+  text-align: center; /* Align the text in the center */
 }
 
 .item p {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
   font-size: 18px;
   color: #FFFFFF;
   text-shadow: 1px 1px 2px #222;
+  margin: 5px 0; /* Adjust spacing between text elements */
 }
 
 .flavor,
 .dessert {
+  font-size: 18px;
   text-align: left;
   flex: 1;
 }
 
 .price {
+  font-size: 18px;
   text-align: right;
   width: 100px;
+}
+
+.item img {
+  margin-bottom: 15px; /* Adds space between image and text */
 }
 
 .item:hover {
@@ -248,6 +261,10 @@ address {
 
   h2 {
     font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
   }
 
   .item p {
