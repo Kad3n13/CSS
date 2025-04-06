@@ -74,6 +74,12 @@ hr {
   box-shadow: 5px 5px 10px #222;
 }
 
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  
 /* Menu item styling */
 .item p {
   display: inline-block;
