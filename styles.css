@@ -1,3 +1,4 @@
+/* Base styles (desktop first) */
 body {
   background-image: url(https://cdn.pixabay.com/photo/2023/01/08/22/16/ai-generated-7706252_1280.jpg);
   font-family: 'Fira Code', monospace;
@@ -10,15 +11,9 @@ body {
 }
 
 @keyframes pulse {
-  0% {
-    opacity: 0.9;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.9;
-  }
+  0% { opacity: 0.9; }
+  50% { opacity: 1; }
+  100% { opacity: 0.9; }
 }
 
 h1 {
@@ -34,38 +29,36 @@ h1 {
 h2 {
   font-size: 30px;
   color: #90EE90;
-  text-shadow: 1px 1px 3px #222222;
+  text-shadow: 1px 1px 3px #222;
 }
 
 .established {
-  font-faimly: 'Goldman', italic; 
+  font-family: 'Goldman', cursive;
+  font-style: italic;
   color: #90EE90;
   font-size: 30px;
 }
-/* CSS */
+
 .small {
   width: 80px;
   height: auto;
   display: block;
-  margin: 10px auto; /* optional: centers it */
+  margin: 10px auto;
 }
 
-h1,
-h2,
-p {
+h1, h2, p {
   text-align: center;
 }
 
 .menu {
-  width: 80%;
-  background-color: rgba(220, 220, 220, 0.3);
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
+  width: 90%;
   max-width: 500px;
+  background-color: rgba(220, 220, 220, 0.3);
+  margin: 0 auto;
+  padding: 20px;
   border: 1px solid #FF4500;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px #222222;
+  box-shadow: 5px 5px 10px #222;
 }
 
 img {
@@ -74,7 +67,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
-  box-shadow: 3px 3px 6px #222222;
+  box-shadow: 3px 3px 6px #222;
   border: 2px solid #FF4500;
 }
 
@@ -94,7 +87,7 @@ hr {
   margin-bottom: 5px;
   font-size: 18px;
   color: #FFFFFF;
-  text-shadow: 1px 1px 2px #222222;
+  text-shadow: 1px 1px 2px #222;
 }
 
 .flavor,
@@ -108,7 +101,6 @@ hr {
   width: 25%;
 }
 
-/* Button style for actions like "Order Now" */
 button {
   background-color: #FF4500;
   color: #fff;
@@ -118,17 +110,14 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 20px;
+  margin: 20px auto 0 auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 button:hover {
   background-color: #90EE90;
 }
 
-/* FOOTER */
 footer {
   font-size: 14px;
   color: #aaa;
@@ -158,7 +147,6 @@ address {
   text-align: center;
   margin-top: 10px;
 }
-/* Add social media links */
 
 .social-media {
   display: flex;
@@ -176,42 +164,98 @@ address {
   color: #90EE90;
 }
 
-/* Hover effect on menu items */
 .item:hover {
   background-color: rgba(255, 255, 255, 0.2);
   transition: background-color 0.3s ease;
 }
 
 nav.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 180px;
-    height: 100vh;
-    background-color: rgba(30, 30, 30, 0.9);
-    padding: 20px;
-    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 100vh;
+  background-color: rgba(30, 30, 30, 0.9);
+  padding: 20px;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.3);
 }
 
 nav.sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav.sidebar li {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 nav.sidebar a {
-    color: #E0E0E0;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  color: #E0E0E0;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 nav.sidebar a:hover {
-    background-color: rgba(255, 69, 0, 0.3);
+  background-color: rgba(255, 69, 0, 0.3);
+}
+
+/* 🔥 RESPONSIVE DESIGN FOR MOBILE 🔥 */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  nav.sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: none;
+    padding: 10px 0;
+  }
+
+  nav.sidebar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav.sidebar li {
+    margin: 5px 10px;
+  }
+
+  .menu {
+    width: 95%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .item p {
+    font-size: 16px;
+  }
+
+  .flavor,
+  .dessert,
+  .price {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-media {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
