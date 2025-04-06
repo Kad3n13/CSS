@@ -2,44 +2,28 @@ body {
   background-image: url(https://storage.googleapis.com/prompt-ops.appspot.com/realvis-xl-4/847eba53-a59b-46ea-89cb-c98039b34e41.png);
   font-family: sans-serif;
   padding: 20px;
-  color: #ddd; /* Light grey for text */
-  background-size: cover; /* Cover the entire background */
-  background-repeat: no-repeat; /* Prevent image from repeating */
-}
-
-h1 {
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 15px;
-  color: #fff; /* White for headings */
-  text-shadow: 2px 2px 4px #000000; /* Add a text shadow */
-}
-
-h2 {
-  font-size: 30px;
-  color: #fff;
-  text-shadow: 2px 2px 4px #000000;
-}
-
-.established {
-  font-style: italic;
-  color: #ccc; /* Slightly lighter grey */
+  color: #ddd;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keep the background fixed during scrolling */
 }
 
 h1, h2, p {
   text-align: center;
+  color: #fff; /* Keep text white or light */
+  text-shadow: 1px 1px 2px black; /* Improve text visibility */
 }
 
 .menu {
   width: 80%;
-  background-color: rgba(102, 51, 153, 0.5); /* A semi-transparent purple */
+  background-color: rgba(50, 50, 50, 0.7); /* Darker, semi-transparent background */
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
   max-width: 500px;
-  border: 1px solid #888; /* Medium grey border */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 5px 5px 10px #000000; /* Add a shadow to the menu */
+  border: 1px solid #555; /* Darker border */
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #333; /* Darker shadow */
 }
 
 img {
@@ -47,22 +31,14 @@ img {
   margin-top: -25px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 50%; /* Make the image round */
-  box-shadow: 3px 3px 6px #000000;
+  border-radius: 50%;
+  box-shadow: 3px 3px 6px #333;
 }
 
 hr {
   height: 2px;
-  background-color: #777; /* Medium grey */
-  border-color: #777;
-}
-
-.bottom-line {
-  margin-top: 25px;
-}
-
-h1, h2 {
-  font-family: Impact, serif;
+  background-color: #555; /* Darker grey */
+  border-color: #555;
 }
 
 .item p {
@@ -70,24 +46,14 @@ h1, h2 {
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 18px;
-  color: #eee; /* Even lighter grey */
+  color: #eee;
+  text-shadow: 1px 1px 2px black; /* Ensure text is readable */
 }
 
-.flavor, .dessert {
-  text-align: left;
-  width: 75%;
-}
-
-.price {
-  text-align: right;
-  width: 25%;
-}
-
-/* FOOTER */
-
+/* Footer */
 footer {
   font-size: 14px;
-  color: #aaa; /* Lighter grey for footer */
+  color: #aaa;
 }
 
 address {
@@ -99,7 +65,8 @@ address {
 }
 
 a {
-  color: #eee; /* Light grey for links */
+  color: #eee;
+  text-shadow: 1px 1px 2px black; /* Ensure links are visible */
 }
 
 a:visited {
@@ -107,7 +74,7 @@ a:visited {
 }
 
 a:hover {
-  color: #fff; /* White on hover */
+  color: #fff;
 }
 
 a:active {
